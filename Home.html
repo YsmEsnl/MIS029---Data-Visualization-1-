@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.8.1.1];shiny-javascript[1.8.1.1];font-awesome[6.4.2];bootstrap[3.4.1];AdminLTE[2.0.6];shinydashboard[0.7.2]</script>
+<script src="jquery-3.6.0/jquery.min.js"></script>
+<link href="shiny-css-1.8.1.1/shiny.min.css" rel="stylesheet" />
+<script src="shiny-javascript-1.8.1.1/shiny.min.js"></script>
+<link href="font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="bootstrap-3.4.1/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
+<script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script src="bootstrap-3.4.1/accessibility/js/bootstrap-accessibility.min.js"></script>
+<link href="AdminLTE-2.0.6/AdminLTE.min.css" rel="stylesheet" />
+<link href="AdminLTE-2.0.6/_all-skins.min.css" rel="stylesheet" />
+<script src="AdminLTE-2.0.6/app.min.js"></script>
+<link href="shinydashboard-0.7.2/shinydashboard.css" rel="stylesheet" />
+<script src="shinydashboard-0.7.2/shinydashboard.min.js"></script>  <title>Home</title>
+</head>
+<body class="skin-blue" style="min-height: 611px;">
+  <div class="wrapper">
+    <header class="main-header">
+      <span class="logo">Home</span>
+      <nav class="navbar navbar-static-top" role="navigation">
+        <span style="display:none;">
+          <i class="fas fa-bars" role="presentation" aria-label="bars icon"></i>
+        </span>
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <span style="color: white; padding-right: 20px;">Date: 09.06.2024</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside id="sidebarCollapsed" class="main-sidebar" data-collapsed="false">
+      <section id="sidebarItemExpanded" class="sidebar">
+        <ul class="sidebar-menu">
+          <li>
+            <a href="#shiny-tab-home" data-toggle="tab" data-value="home">
+              <i class="fas fa-house" role="presentation" aria-label="house icon"></i>
+              <span>About Me</span>
+            </a>
+          </li>
+          <li>
+            <a href="#shiny-tab-data_info" data-toggle="tab" data-value="data_info">
+              <i class="fas fa-database" role="presentation" aria-label="database icon"></i>
+              <span>Data Set Information</span>
+            </a>
+          </li>
+          <li>
+            <a href="#shiny-tab-academic" data-toggle="tab" data-value="academic">
+              <i class="fas fa-graduation-cap" role="presentation" aria-label="graduation-cap icon"></i>
+              <span>Academic Background</span>
+            </a>
+          </li>
+          <li>
+            <a href="#shiny-tab-skills" data-toggle="tab" data-value="skills">
+              <i class="fas fa-list" role="presentation" aria-label="list icon"></i>
+              <span>Skills</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <div class="content-wrapper">
+      <section class="content">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane" id="shiny-tab-home">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box box-solid box-primary">
+                  <div class="box-header">
+                    <h3 class="box-title">Personal Information</h3>
+                  </div>
+                  <div class="box-body">Name: Yeşim Esenli<br>Student Number: 229910549<br>Email: <a href='mailto:229910549@stu.istinye.edu.tr'>229910549@stu.istinye.edu.tr</a><br>LinkedIn: <a href='https://tr.linkedin.com/in/yeşim-esenli-864301163' target='_blank'>Yeşim Esenli's Profile</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="shiny-tab-data_info">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box box-solid box-info">
+                  <div class="box-header">
+                    <h3 class="box-title">Overview</h3>
+                  </div>
+                  <div class="box-body">This dataset contains network traffic data including dates, local IP node numbers, and remote ASN numbers.</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="box box-solid box-info">
+                  <div class="box-header">
+                    <h3 class="box-title">Variables</h3>
+                  </div>
+                  <div class="box-body">List of variables in the dataset: 
+        - date: The date of the traffic data.
+        - l_ipn: Local IP node number.
+        - r_asn: Remote Autonomous System Number.
+        - f: Frequency or some other count measure.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="shiny-tab-academic">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box box-solid box-warning">
+                  <div class="box-header">
+                    <h3 class="box-title">Education</h3>
+                  </div>
+                  <div class="box-body">As a second-year Management Information Systems student at Istinye University, I am deeply engaged in learning how technology intersects with business. Our comprehensive curriculum covers programming, data analysis, and systems design, with practical projects linked to local businesses enhancing our real-world understanding. I also participate in the Artificial Intelligence Club for Social Benefit, which connects me with industry trends and networking opportunities. Balancing studies, projects, and extracurricular activities is challenging but rewarding, preparing me well for future internships and a career in this dynamic field.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="shiny-tab-skills">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="box box-solid box-success">
+                  <div class="box-header">
+                    <h3 class="box-title">Technical Skills</h3>
+                  </div>
+                  <div class="box-body">RStudio, RConsole, Python, HTML5, CSS etc.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
